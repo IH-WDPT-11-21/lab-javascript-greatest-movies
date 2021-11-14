@@ -69,7 +69,7 @@ const orderAlphabetically = moviesArr => {
 
 // BONUS - Iteration 7: Time Format - Turn duration of the movies from hours to minutes
 const turnHoursToMinutes = moviesArr => {
-  let result = moviesArr.map(movie => movie)
+  let result = JSON.parse(JSON.stringify(moviesArr))
 
   result.forEach( movie => {
      let dur = movie.duration.split(" ")
